@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="ring"></div>
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <script>
+      var h1 = document.querySelector('.ring'),
+        h2 = document.querySelector('.ring'),
+        h3 = document.querySelector('.ring'),
+        h4 = document.querySelector('.ring'),
+        h5 = document.querySelector('.ring'),
+        h6 = document.querySelector('.ring')
+
+      const loader = document.querySelector('.loader')
+
+      setTimeout(function () {
+        loader.style.opacity = '0'
+
+        setTimeout(function () {
+          loader.style.display = 'none'
+        }, 500)
+      }, 1500)
+    </script>
+  </body>
+</html>
